@@ -1,0 +1,175 @@
+2012/09/29 15:21:19 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dd.tbl_migration' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `tbl_migration`.
+2012/09/29 15:43:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "user/index".' in D:\www\public_html\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\www\public_html\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('user/index')
+#1 D:\www\public_html\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\dd\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/user/index
+---
+2012/09/29 15:43:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "user/admin'".' in D:\www\public_html\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\www\public_html\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('user/admin'')
+#1 D:\www\public_html\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\dd\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/user/admin%27
+---
+2012/09/29 15:50:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "гыук/login".' in D:\www\public_html\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\www\public_html\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('????????/login')
+#1 D:\www\public_html\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\dd\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/%D0%B3%D1%8B%D1%83%D0%BA/login
+---
+2012/09/29 15:50:20 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+in D:\www\dd\protected\modules\user\controllers\RegistrationController.php (35)
+in D:\www\dd\index.php (13)
+2012/09/29 15:50:21 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+in D:\www\dd\protected\modules\user\controllers\RegistrationController.php (35)
+in D:\www\dd\index.php (13)
+2012/09/29 15:50:24 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+in D:\www\dd\protected\modules\user\controllers\RegistrationController.php (35)
+in D:\www\dd\index.php (13)
+2012/09/29 15:50:28 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+in D:\www\dd\protected\modules\user\controllers\RegistrationController.php (35)
+in D:\www\dd\index.php (13)
+2012/09/29 15:58:18 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in D:\www\public_html\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 D:\www\public_html\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 D:\www\public_html\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\www\public_html\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\www\public_html\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\www\public_html\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\www\public_html\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\www\public_html\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\www\public_html\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 D:\www\public_html\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('content/admin')
+#9 D:\www\public_html\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\www\dd\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/content/admin
+HTTP_REFERER=http://l.dd/index.php/content/index
+---
+2012/09/29 16:09:58 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+2012/09/29 16:10:01 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+2012/09/29 16:10:02 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+2012/09/29 16:10:05 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+2012/09/29 16:10:11 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+2012/09/29 16:10:13 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+2012/09/29 16:10:29 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+2012/09/29 16:10:31 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+2012/09/29 16:10:37 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+2012/09/29 16:10:40 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+2012/09/29 16:10:45 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+2012/09/29 16:10:47 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+2012/09/29 16:10:54 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+2012/09/29 16:11:07 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+2012/09/29 16:11:15 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+2012/09/29 21:11:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "user/index".' in D:\www\public_html\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\www\public_html\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('user/index')
+#1 D:\www\public_html\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\dd\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/user/index
+---
+2012/09/29 21:14:13 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in D:\www\public_html\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 D:\www\public_html\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 D:\www\public_html\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\www\public_html\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\www\public_html\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\www\public_html\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\www\public_html\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\www\public_html\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\www\public_html\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 D:\www\public_html\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('content/admin')
+#9 D:\www\public_html\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\www\dd\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/content/admin
+HTTP_REFERER=http://l.dd/index.php/content/1
+---
+2012/09/29 21:15:05 [error] [exception.CException] exception 'CException' with message 'В классе WebUser и его поведениях не найден метод или замыкание с именем "getAdmin".' in D:\www\public_html\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\www\dd\protected\controllers\ContentController.php(40): CComponent->__call('getAdmin', Array)
+#1 D:\www\dd\protected\controllers\ContentController.php(40): WebUser->getAdmin()
+#2 D:\www\public_html\yii\framework\web\CController.php(1145): ContentController->accessRules()
+#3 D:\www\public_html\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\www\public_html\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\www\public_html\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\www\public_html\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\www\public_html\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 D:\www\public_html\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('content/admin')
+#9 D:\www\public_html\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\www\dd\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/content/admin
+HTTP_REFERER=http://l.dd/index.php/content/1
+---
+2012/09/29 21:16:53 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in D:\www\public_html\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 D:\www\public_html\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 D:\www\public_html\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\www\public_html\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\www\public_html\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\www\public_html\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\www\public_html\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\www\public_html\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\www\public_html\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 D:\www\public_html\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('content/admin')
+#9 D:\www\public_html\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\www\dd\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/content/admin
+HTTP_REFERER=http://l.dd/index.php/content/index
+---
+2012/09/29 21:19:10 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in D:\www\public_html\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 D:\www\public_html\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 D:\www\public_html\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\www\public_html\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\www\public_html\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\www\public_html\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\www\public_html\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\www\public_html\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\www\public_html\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 D:\www\public_html\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('content/admin')
+#9 D:\www\public_html\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\www\dd\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/content/admin
+HTTP_REFERER=http://l.dd/index.php/content/index
+---
+2012/09/29 21:44:09 [error] [exception.CException] exception 'CException' with message 'В классе CActiveForm и его поведениях не найден метод или замыкание с именем "textRadio".' in D:\www\public_html\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\www\dd\protected\views\content\_form.php(74): CComponent->__call('textRadio', Array)
+#1 D:\www\dd\protected\views\content\_form.php(74): CActiveForm->textRadio(Object(Content), 's_need')
+#2 D:\www\public_html\yii\framework\web\CBaseController.php(127): require('D:\www\dd\prote...')
+#3 D:\www\public_html\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\www\dd\prote...', Array, true)
+#4 D:\www\public_html\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\www\dd\prote...', Array, true)
+#5 D:\www\dd\protected\views\content\create.php(24): CController->renderPartial('_form', Array)
+#6 D:\www\public_html\yii\framework\web\CBaseController.php(127): require('D:\www\dd\prote...')
+#7 D:\www\public_html\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\www\dd\prote...', Array, true)
+#8 D:\www\public_html\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\www\dd\prote...', Array, true)
+#9 D:\www\public_html\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#10 D:\www\dd\protected\controllers\ContentController.php(104): CController->render('create', Array)
+#11 D:\www\public_html\yii\framework\web\actions\CInlineAction.php(50): ContentController->actionCreate()
+#12 D:\www\public_html\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 D:\www\public_html\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 D:\www\public_html\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#15 D:\www\public_html\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 D:\www\public_html\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 D:\www\public_html\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 D:\www\public_html\yii\framework\web\CController.php(292): CFilterChain->run()
+#19 D:\www\public_html\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\www\public_html\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#21 D:\www\public_html\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('content/create')
+#22 D:\www\public_html\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 D:\www\dd\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/index.php/content/create
+HTTP_REFERER=http://l.dd/index.php/content/index
+---
