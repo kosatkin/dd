@@ -173,3 +173,20 @@ Stack trace:
 REQUEST_URI=/index.php/content/create
 HTTP_REFERER=http://l.dd/index.php/content/index
 ---
+2012/10/07 00:57:54 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in D:\www\dd\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 D:\www\dd\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 D:\www\dd\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\www\dd\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\www\dd\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\www\dd\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\www\dd\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\www\dd\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\www\dd\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 D:\www\dd\framework\web\CWebApplication.php(142): CWebApplication->runController('content/admin')
+#9 D:\www\dd\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\www\dd\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/content/admin
+HTTP_REFERER=http://l.dd/index.php/content/index
+---

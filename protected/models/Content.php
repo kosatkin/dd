@@ -8,6 +8,7 @@
  * @property string $dt_create
  * @property integer $is_active
  * @property integer $is_remove
+ * @property string $k_user
  * @property string $s_name
  * @property string $s_adress
  * @property string $s_phone
@@ -25,6 +26,34 @@ class Content extends CActiveRecord
    *
    * @return Content the static model class
    */
+
+  protected function beforeSave()
+  {
+    $is_valid=false;
+
+    if(Yii::app()->user->isGuest)
+      return false;
+
+    if(empty($this->id))
+    {
+      $this->dt_create=date('Y:m:d H:i:s');
+      $this->k_user=Yii::app()->user->id;
+      $is_valid=true;
+    }
+
+    if(in_array(Yii::app()->user->name,Yii::app()->user->getAdmins()))
+    {
+      $this->is_active=!empty($_POST['is_active']);
+      $this->is_remove=!empty($_POST['is_remove']);
+      $is_valid=true;
+    }
+
+    if(Yii::app()->user->id==$this->k_user)
+      $is_valid=true;
+
+    return $is_valid;
+  }
+
   public static function model($className=__CLASS__)
   {
     return parent::model($className);
@@ -56,13 +85,18 @@ class Content extends CActiveRecord
         'integerOnly'=>true
       ),
       array(
-        'dt_create',
+        'k_user',
+        'length',
+        'max'=>20
+      ),
+      array(
+        'dt_create, is_active, is_remove, k_user',
         'safe'
       ),
       // The following rule is used by search().
       // Please remove those attributes that should not be searched.
       array(
-        'id, dt_create, is_active, is_remove, s_name, s_adress, s_phone, s_email, s_personnel, s_description, s_need',
+        'id, dt_create, is_active, is_remove, k_user, s_name, s_adress, s_phone, s_email, s_personnel, s_description, s_need',
         'safe',
         'on'=>'search'
       ),
@@ -86,16 +120,17 @@ class Content extends CActiveRecord
   {
     return array(
       'id'=>'ID',
-      'dt_create'=>'Dt Create',
-      'is_active'=>'Is Active',
-      'is_remove'=>'Is Remove',
-      's_name'=>'S Name',
-      's_adress'=>'S Adress',
-      's_phone'=>'S Phone',
-      's_email'=>'S Email',
-      's_personnel'=>'S Personnel',
+      'dt_create'=>'Дата создания',
+      'is_active'=>'Активно',
+      'is_remove'=>'Удалено',
+      'k_user'=>'Владелец',
+      's_name'=>'Имя',
+      's_adress'=>'Адрес',
+      's_phone'=>'Телефон',
+      's_email'=>'E-mail',
+      's_personnel'=>'Ответственный',
       's_description'=>'Описание',
-      's_need'=>'S Need',
+      's_need'=>'Нужно',
     );
   }
 
@@ -114,6 +149,7 @@ class Content extends CActiveRecord
     $criteria->compare('dt_create',$this->dt_create,true);
     $criteria->compare('is_active',$this->is_active);
     $criteria->compare('is_remove',$this->is_remove);
+    $criteria->compare('k_user',$this->k_user,true);
     $criteria->compare('s_name',$this->s_name,true);
     $criteria->compare('s_adress',$this->s_adress,true);
     $criteria->compare('s_phone',$this->s_phone,true);

@@ -54,7 +54,7 @@ class ContentController extends Controller
           'admin',
           'delete'
         ),
-        'users'=>array(implode(',',Yii::app()->user->getAdmins())),
+        'users'=>array('admin'),
       ),
       array(
         'deny',

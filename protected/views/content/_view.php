@@ -8,7 +8,7 @@
   <b><?php echo CHtml::encode($data->getAttributeLabel('id')); ?>:</b>
   <?php echo CHtml::link(CHtml::encode($data->id),array(
   'view',
-  'id'=>$data->id,
+  'id'=>$data->id
 )); ?>
   <br/>
 
@@ -24,6 +24,10 @@
   <?php echo CHtml::encode($data->is_remove); ?>
   <br/>
 
+  <b><?php echo CHtml::encode($data->getAttributeLabel('k_user')); ?>:</b>
+  <?php echo CHtml::encode($data->k_user); ?>
+  <br/>
+
   <b><?php echo CHtml::encode($data->getAttributeLabel('s_name')); ?>:</b>
   <?php echo CHtml::encode($data->s_name); ?>
   <br/>
@@ -32,9 +36,10 @@
   <?php echo CHtml::encode($data->s_adress); ?>
   <br/>
 
-  <b><?php echo CHtml::encode($data->getAttributeLabel('s_phone')); ?>:</b>
-  <?php echo CHtml::encode($data->s_phone); ?>
-  <br/>
+  <?php /*
+	<b><?php echo CHtml::encode($data->getAttributeLabel('s_phone')); ?>:</b>
+	<?php echo CHtml::encode($data->s_phone); ?>
+	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('s_email')); ?>:</b>
 	<?php echo CHtml::encode($data->s_email); ?>
@@ -52,5 +57,6 @@
 	<?php echo CHtml::encode($data->s_need); ?>
 	<br />
 
+	*/ ?>
 
 </div>

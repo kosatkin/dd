@@ -50,6 +50,7 @@ $this->menu=array(
     'dt_create',
     'is_active',
     'is_remove',
+    'k_user',
     's_name',
     's_adress',
     's_phone',

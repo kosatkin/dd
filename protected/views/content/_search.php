@@ -35,6 +35,14 @@
   </div>
 
   <div class="row">
+    <?php echo $form->label($model,'k_user'); ?>
+    <?php echo $form->textField($model,'k_user',array(
+    'size'=>20,
+    'maxlength'=>20
+  )); ?>
+  </div>
+
+  <div class="row">
     <?php echo $form->label($model,'s_name'); ?>
     <?php echo $form->textField($model,'s_name'); ?>
   </div>

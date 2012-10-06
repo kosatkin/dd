@@ -3,22 +3,19 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-  'Все дома',
+  'Contents',
 );
 
-if(!Yii::app()->user->isGuest)
-{
-  $this->menu=array(
-    array(
-      'label'=>'Создать запись',
-      'url'=>array('create')
-    ),
-    array(
-      'label'=>'Управление записями',
-      'url'=>array('admin'),
-    ),
-  );
-}
+$this->menu=array(
+  array(
+    'label'=>'Create Content',
+    'url'=>array('create')
+  ),
+  array(
+    'label'=>'Manage Content',
+    'url'=>array('admin')
+  ),
+);
 ?>
 
 <h1>Contents</h1>

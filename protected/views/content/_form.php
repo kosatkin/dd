@@ -15,6 +15,7 @@
 
   <?php echo $form->errorSummary($model); ?>
 
+  <?php if(Yii::app()->user->isAdmin()): ?>
   <div class="row">
     <?php echo $form->labelEx($model,'dt_create'); ?>
     <?php echo $form->textField($model,'dt_create'); ?>
@@ -32,6 +33,16 @@
     <?php echo $form->textField($model,'is_remove'); ?>
     <?php echo $form->error($model,'is_remove'); ?>
   </div>
+
+  <div class="row">
+    <?php echo $form->labelEx($model,'k_user'); ?>
+    <?php echo $form->textField($model,'k_user',array(
+    'size'=>20,
+    'maxlength'=>20
+  )); ?>
+    <?php echo $form->error($model,'k_user'); ?>
+  </div>
+  <?php endif ?>
 
   <div class="row">
     <?php echo $form->labelEx($model,'s_name'); ?>
@@ -65,7 +76,7 @@
 
   <div class="row">
     <?php echo $form->labelEx($model,'s_description'); ?>
-    <?php echo $form->textArea($model,'s_description'); ?>
+    <?php echo $form->textField($model,'s_description'); ?>
     <?php echo $form->error($model,'s_description'); ?>
   </div>
 

@@ -55,15 +55,16 @@ $('.search-form form').submit(function(){
     'dt_create',
     'is_active',
     'is_remove',
+    'k_user',
     's_name',
-    's_adress',
     /*
-      's_phone',
-      's_email',
-      's_personnel',
-      's_description',
-      's_need',
-      */
+    's_adress',
+    's_phone',
+    's_email',
+    's_personnel',
+    's_description',
+    's_need',
+    */
     array(
       'class'=>'CButtonColumn',
     ),
