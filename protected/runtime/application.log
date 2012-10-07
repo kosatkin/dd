@@ -207,3 +207,171 @@ Stack trace:
 REQUEST_URI=/index.php/content/admin
 HTTP_REFERER=http://l.dd/index.php/content/create
 ---
+2012/10/07 11:46:42 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in D:\www\dd\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 D:\www\dd\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 D:\www\dd\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\www\dd\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\www\dd\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\www\dd\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\www\dd\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\www\dd\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\www\dd\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 D:\www\dd\framework\web\CWebApplication.php(142): CWebApplication->runController('content/admin')
+#9 D:\www\dd\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\www\dd\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/content/admin
+HTTP_REFERER=http://l.dd/index.php/content/index
+---
+2012/10/07 11:48:40 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+in D:\www\dd\protected\modules\user\controllers\RegistrationController.php (35)
+in D:\www\dd\index.php (13)
+2012/10/07 11:48:40 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+in D:\www\dd\protected\modules\user\controllers\RegistrationController.php (35)
+in D:\www\dd\index.php (13)
+2012/10/07 11:48:44 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+in D:\www\dd\protected\modules\user\controllers\RegistrationController.php (35)
+in D:\www\dd\index.php (13)
+2012/10/07 11:48:45 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+in D:\www\dd\protected\modules\user\controllers\RegistrationController.php (35)
+in D:\www\dd\index.php (13)
+2012/10/07 11:49:28 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+in D:\www\dd\protected\modules\user\controllers\RegistrationController.php (35)
+in D:\www\dd\index.php (13)
+2012/10/07 11:49:40 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+in D:\www\dd\protected\modules\user\controllers\RegistrationController.php (35)
+in D:\www\dd\index.php (13)
+2012/10/07 11:49:43 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+in D:\www\dd\protected\modules\user\controllers\RegistrationController.php (35)
+in D:\www\dd\index.php (13)
+2012/10/07 11:49:45 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+in D:\www\dd\protected\modules\user\controllers\RegistrationController.php (35)
+in D:\www\dd\index.php (13)
+2012/10/07 11:49:47 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+in D:\www\dd\protected\modules\user\controllers\RegistrationController.php (35)
+in D:\www\dd\index.php (13)
+2012/10/07 11:49:51 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+in D:\www\dd\protected\modules\user\controllers\RegistrationController.php (35)
+in D:\www\dd\index.php (13)
+2012/10/07 11:50:10 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+in D:\www\dd\protected\modules\user\controllers\RegistrationController.php (35)
+in D:\www\dd\index.php (13)
+2012/10/07 11:50:17 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+in D:\www\dd\protected\modules\user\controllers\RegistrationController.php (35)
+in D:\www\dd\index.php (13)
+2012/10/07 11:50:19 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+in D:\www\dd\protected\modules\user\controllers\RegistrationController.php (35)
+in D:\www\dd\index.php (13)
+2012/10/07 11:50:23 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+in D:\www\dd\protected\modules\user\controllers\RegistrationController.php (35)
+in D:\www\dd\index.php (13)
+2012/10/07 11:50:29 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+in D:\www\dd\protected\modules\user\controllers\RegistrationController.php (35)
+in D:\www\dd\index.php (13)
+2012/10/07 11:50:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "update/view".' in D:\www\dd\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\www\dd\framework\web\CWebApplication.php(142): CWebApplication->runController('update/view')
+#1 D:\www\dd\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\dd\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/update/1
+---
+2012/10/07 11:58:05 [error] [php] Missing argument 2 for ContentController::beforeAction(), called in D:\www\dd\framework\web\CController.php on line 307 and defined (D:\www\dd\protected\controllers\ContentController.php:14)
+Stack trace:
+#0 D:\www\dd\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#1 D:\www\dd\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#2 D:\www\dd\framework\web\filters\CInlineFilter.php(59): ContentController->filterAccessControl()
+#3 D:\www\dd\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#4 D:\www\dd\framework\web\CController.php(292): CFilterChain->run()
+#5 D:\www\dd\framework\web\CController.php(266): ContentController->runActionWithFilters()
+#6 D:\www\dd\framework\web\CWebApplication.php(283): ContentController->run()
+#7 D:\www\dd\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#8 D:\www\dd\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\www\dd\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/content/update/1
+in D:\www\dd\protected\controllers\ContentController.php (14)
+in D:\www\dd\index.php (13)
+2012/10/07 12:03:27 [error] [php] Missing argument 1 for ContentController::loadModel(), called in D:\www\dd\protected\controllers\ContentController.php on line 24 and defined (D:\www\dd\protected\controllers\ContentController.php:202)
+Stack trace:
+#0 D:\www\dd\framework\web\filters\CFilterChain.php(134): ContentController->runAction()
+#1 D:\www\dd\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 D:\www\dd\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#3 D:\www\dd\framework\web\filters\CInlineFilter.php(59): ContentController->filterAccessControl()
+#4 D:\www\dd\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 D:\www\dd\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\www\dd\framework\web\CController.php(266): ContentController->runActionWithFilters()
+#7 D:\www\dd\framework\web\CWebApplication.php(283): ContentController->run()
+#8 D:\www\dd\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 D:\www\dd\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\www\dd\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/content/update/1
+in D:\www\dd\protected\controllers\ContentController.php (202)
+in D:\www\dd\protected\controllers\ContentController.php (24)
+in D:\www\dd\index.php (13)
+2012/10/07 12:03:38 [error] [php] Undefined index: id (D:\www\dd\protected\controllers\ContentController.php:19)
+Stack trace:
+#0 D:\www\dd\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#1 D:\www\dd\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#2 D:\www\dd\framework\web\filters\CInlineFilter.php(59): ContentController->filterAccessControl()
+#3 D:\www\dd\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#4 D:\www\dd\framework\web\CController.php(292): CFilterChain->run()
+#5 D:\www\dd\framework\web\CController.php(266): ContentController->runActionWithFilters()
+#6 D:\www\dd\framework\web\CWebApplication.php(283): ContentController->run()
+#7 D:\www\dd\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#8 D:\www\dd\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\www\dd\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/content/update
+in D:\www\dd\protected\controllers\ContentController.php (19)
+in D:\www\dd\index.php (13)
+2012/10/07 12:07:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in D:\www\dd\protected\controllers\ContentController.php:211
+Stack trace:
+#0 D:\www\dd\protected\controllers\ContentController.php(22): ContentController->loadModel('67')
+#1 D:\www\dd\framework\web\CController.php(307): ContentController->beforeAction(Object(CInlineAction))
+#2 D:\www\dd\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#3 D:\www\dd\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#4 D:\www\dd\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#5 D:\www\dd\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#6 D:\www\dd\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 D:\www\dd\framework\web\CController.php(292): CFilterChain->run()
+#8 D:\www\dd\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\www\dd\framework\web\CWebApplication.php(283): CController->run('update')
+#10 D:\www\dd\framework\web\CWebApplication.php(142): CWebApplication->runController('content/update')
+#11 D:\www\dd\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\www\dd\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/index.php/content/update/67
+---
+2012/10/07 12:09:22 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in D:\www\dd\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 D:\www\dd\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 D:\www\dd\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\www\dd\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\www\dd\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\www\dd\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\www\dd\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\www\dd\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\www\dd\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 D:\www\dd\framework\web\CWebApplication.php(142): CWebApplication->runController('content/admin')
+#9 D:\www\dd\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\www\dd\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/content/admin
+---
+2012/10/07 12:10:08 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in D:\www\dd\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 D:\www\dd\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 D:\www\dd\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\www\dd\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\www\dd\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\www\dd\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\www\dd\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\www\dd\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\www\dd\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 D:\www\dd\framework\web\CWebApplication.php(142): CWebApplication->runController('content/admin')
+#9 D:\www\dd\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\www\dd\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/content/admin
+HTTP_REFERER=http://l.dd/index.php/content/2
+---

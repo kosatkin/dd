@@ -11,6 +11,24 @@ class ContentController extends Controller
   /**
    * @return array action filters
    */
+  protected function beforeAction($action)
+  {
+    switch($action->getId())
+    {
+      case 'update':
+        $id=isset($this->actionParams['id'])?$this->actionParams['id']:0;
+        if($id)
+        {
+          $model=$this->loadModel($id);
+          if($model->k_user==Yii::app()->user->id)
+            return true;
+        }
+        return false;
+      default:
+        return true;
+    }
+  }
+
   public function filters()
   {
     return array(
@@ -54,7 +72,7 @@ class ContentController extends Controller
           'admin',
           'delete'
         ),
-        'users'=>array('admin'),
+        'users'=>array(implode(',',Yii::app()->user->getAdmins())),
       ),
       array(
         'deny',
