@@ -207,3 +207,28 @@ Stack trace:
 REQUEST_URI=/index.php/content/admin
 HTTP_REFERER=http://l.dd/index.php/content/create
 ---
+2012/10/16 21:19:05 [error] [php] date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'Europe/Helsinki' for '3.0/DST' instead (D:\www\general\dd.anna\protected\views\layouts\main.php:82)
+Stack trace:
+#0 D:\www\general\dd.anna\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#1 D:\www\general\dd.anna\framework\web\widgets\CContentDecorator.php(77): SiteController->renderFile()
+#2 D:\www\general\dd.anna\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate()
+#3 D:\www\general\dd.anna\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput()
+#4 D:\www\general\dd.anna\framework\web\CBaseController.php(207): CContentDecorator->run()
+#5 D:\www\general\dd.anna\framework\web\CBaseController.php(301): SiteController->endWidget()
+#6 D:\www\general\dd.anna\protected\views\layouts\column1.php(6): SiteController->endContent()
+#7 D:\www\general\dd.anna\framework\web\CBaseController.php(127): require()
+#8 D:\www\general\dd.anna\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#9 D:\www\general\dd.anna\framework\web\CController.php(785): SiteController->renderFile()
+#10 D:\www\general\dd.anna\protected\controllers\SiteController.php(32): SiteController->render()
+#11 D:\www\general\dd.anna\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#12 D:\www\general\dd.anna\framework\web\CController.php(309): CInlineAction->runWithParams()
+#13 D:\www\general\dd.anna\framework\web\CController.php(287): SiteController->runAction()
+#14 D:\www\general\dd.anna\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#15 D:\www\general\dd.anna\framework\web\CWebApplication.php(283): SiteController->run()
+#16 D:\www\general\dd.anna\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#17 D:\www\general\dd.anna\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 D:\www\general\dd.anna\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in D:\www\general\dd.anna\protected\views\layouts\main.php (82)
+in D:\www\general\dd.anna\protected\views\layouts\column1.php (6)
+in D:\www\general\dd.anna\protected\controllers\SiteController.php (32)
