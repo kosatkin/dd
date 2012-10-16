@@ -7,3 +7,6 @@ $this->breadcrumbs=array(
 );
 ?>
 <h1>О проекте</h1>
+  sdgsdfsf
+  sdfsdf
+  sdfsdf
