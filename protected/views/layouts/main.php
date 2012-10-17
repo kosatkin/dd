@@ -29,6 +29,7 @@
 
   <div id="mainmenu">
     <?php $this->widget('zii.widgets.CMenu',array(
+    'htmlOptions' => array('class' => 'asdasd'),
     'items'=>array(
       array(
         'label'=>'Главная',
