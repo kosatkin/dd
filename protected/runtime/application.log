@@ -576,3 +576,33 @@ Stack trace:
 REQUEST_URI=/index.php/content/admin
 HTTP_REFERER=http://l.dd/index.php/content/2
 ---
+2012/10/07 14:52:11 [error] [php] include(UserModule.php): failed to open stream: No such file or directory (D:\www\dd\framework\YiiBase.php:423)
+Stack trace:
+#0 D:\www\dd\protected\controllers\ContentController.php(75): spl_autoload_call()
+#1 D:\www\dd\framework\web\CController.php(1145): ContentController->accessRules()
+#2 D:\www\dd\framework\web\filters\CInlineFilter.php(59): ContentController->filterAccessControl()
+#3 D:\www\dd\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#4 D:\www\dd\framework\web\CController.php(292): CFilterChain->run()
+#5 D:\www\dd\framework\web\CController.php(266): ContentController->runActionWithFilters()
+#6 D:\www\dd\framework\web\CWebApplication.php(283): ContentController->run()
+#7 D:\www\dd\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#8 D:\www\dd\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\www\dd\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/content/index
+in D:\www\dd\protected\controllers\ContentController.php (75)
+in D:\www\dd\index.php (13)
+2012/10/07 14:52:24 [error] [php] include(UserModule.php): failed to open stream: No such file or directory (D:\www\dd\framework\YiiBase.php:423)
+Stack trace:
+#0 D:\www\dd\protected\controllers\ContentController.php(75): spl_autoload_call()
+#1 D:\www\dd\framework\web\CController.php(1145): ContentController->accessRules()
+#2 D:\www\dd\framework\web\filters\CInlineFilter.php(59): ContentController->filterAccessControl()
+#3 D:\www\dd\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#4 D:\www\dd\framework\web\CController.php(292): CFilterChain->run()
+#5 D:\www\dd\framework\web\CController.php(266): ContentController->runActionWithFilters()
+#6 D:\www\dd\framework\web\CWebApplication.php(283): ContentController->run()
+#7 D:\www\dd\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#8 D:\www\dd\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\www\dd\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/content/index
+in D:\www\dd\protected\controllers\ContentController.php (75)
+in D:\www\dd\index.php (13)
